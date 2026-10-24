@@ -1,0 +1,1364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Field Study 1 & 2 | E-Portfolio</title>
+
+    <meta name="description"
+          content="Field Study 1 and 2 electronic portfolio documenting observations, participation, reflections, and professional growth.">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- BACKGROUND OVERLAY -->
+    <div class="background-overlay"></div>
+
+    <!-- FACEBOOK-STYLE THREE-LINE MENU -->
+    <button
+        class="menu-toggle"
+        id="menuToggle"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="sectionMenu">
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </button>
+
+    <!-- MENU BACKDROP -->
+    <div class="menu-backdrop" id="menuBackdrop" hidden></div>
+
+    <!-- SIDE NAVIGATION -->
+    <aside class="side-menu" id="sectionMenu" hidden>
+
+        <div class="menu-header">
+            <div class="menu-logo">FS</div>
+
+            <div>
+                <h2>Field Study</h2>
+                <p>Electronic Portfolio</p>
+            </div>
+        </div>
+
+        <div class="menu-student">
+            <div class="menu-avatar">FS</div>
+
+            <div>
+                <strong>Your Name</strong>
+                <span>Pre-Service Teacher</span>
+            </div>
+        </div>
+
+        <nav class="menu-navigation" aria-label="Portfolio sections">
+
+            <a href="#introduction" class="menu-link active">
+                <span class="menu-number">01</span>
+                Introduction
+            </a>
+
+            <a href="#profile" class="menu-link">
+                <span class="menu-number">02</span>
+                Student Profile
+            </a>
+
+            <a href="#goals" class="menu-link">
+                <span class="menu-number">03</span>
+                Learning Goals
+            </a>
+
+            <a href="#school" class="menu-link">
+                <span class="menu-number">04</span>
+                Cooperating School
+            </a>
+
+            <a href="#weekly" class="menu-link">
+                <span class="menu-number">05</span>
+                Weekly Documentation
+            </a>
+
+            <a href="#activities" class="menu-link">
+                <span class="menu-number">06</span>
+                Professional Activities
+            </a>
+
+            <a href="#action-plan" class="menu-link">
+                <span class="menu-number">07</span>
+                Growth Action Plan
+            </a>
+
+            <a href="#appendices" class="menu-link">
+                <span class="menu-number">08</span>
+                Appendices
+            </a>
+
+        </nav>
+
+        <div class="menu-footer">
+            <p>Field Study 1 &amp; 2</p>
+            <small>Teaching • Learning • Growth</small>
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN WEBSITE -->
+    <main class="portfolio-container">
+
+        <!-- HERO / INTRODUCTION -->
+        <section class="hero portfolio-section" id="introduction">
+
+            <div class="hero-content">
+
+                <span class="eyebrow">
+                    TAGUIG CITY UNIVERSITY
+                </span>
+
+                <h1>
+                    Field Study
+                    <span>1 &amp; 2</span>
+                    E-Portfolio
+                </h1>
+
+                <p class="hero-description">
+                    A collection of my classroom observations, learning
+                    experiences, teaching participation, reflections, and
+                    professional growth as a pre-service science teacher.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#profile" class="button button-primary">
+                        Explore My Portfolio
+                    </a>
+
+                    <a href="#weekly" class="button button-outline">
+                        View Documentation
+                    </a>
+                </div>
+
+                <div class="hero-information">
+
+                    <div>
+                        <strong>01–02</strong>
+                        <span>Field Studies</span>
+                    </div>
+
+                    <div>
+                        <strong>8</strong>
+                        <span>Portfolio Sections</span>
+                    </div>
+
+                    <div>
+                        <strong>Growth</strong>
+                        <span>Professional Journey</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="hero-card">
+
+                <div class="hero-card-top">
+                    <span>PRE-SERVICE TEACHER</span>
+                    <span class="status-dot"></span>
+                </div>
+
+                <div class="hero-card-symbol">FS</div>
+
+                <h2>Your Name</h2>
+
+                <p>Bachelor of Secondary Education</p>
+                <p>Major in Science</p>
+
+                <div class="hero-card-bottom">
+                    <span>FIELD STUDY 1</span>
+                    <span>FIELD STUDY 2</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- STUDENT PROFILE -->
+        <section class="portfolio-section content-section" id="profile">
+
+            <div class="section-heading">
+
+                <span class="section-number">01</span>
+
+                <div>
+                    <p class="section-kicker">GET TO KNOW ME</p>
+                    <h2>Student Profile</h2>
+                    <p class="section-description">
+                        The person behind this learning journey.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="profile-layout">
+
+                <!-- PROFILE PHOTO -->
+                <article class="card profile-photo-card">
+
+                    <div class="profile-photo" id="profilePhoto">
+
+                        <div class="photo-placeholder" id="photoPlaceholder">
+                            <span class="photo-icon">＋</span>
+                            <strong>Professional Photo</strong>
+                            <span>Click to add your photo</span>
+                        </div>
+
+                        <img
+                            id="profilePreview"
+                            alt="Student professional photograph"
+                            hidden>
+
+                    </div>
+
+                    <label for="profilePhotoInput" class="button button-dark photo-upload">
+                        Upload Photo
+                    </label>
+
+                    <input
+                        type="file"
+                        id="profilePhotoInput"
+                        accept="image/*"
+                        hidden>
+
+                    <p class="small-note">
+                        Choose a clear, professional photograph.
+                    </p>
+
+                </article>
+
+
+                <!-- STUDENT INFORMATION -->
+                <article class="card profile-information">
+
+                    <div class="card-heading">
+                        <span class="card-icon">01</span>
+                        <h3>Personal Information</h3>
+                    </div>
+
+                    <div class="information-list">
+
+                        <div class="information-row">
+                            <span>Full Name</span>
+                            <strong>Your Full Name</strong>
+                        </div>
+
+                        <div class="information-row">
+                            <span>Student Number</span>
+                            <strong>Add your student number</strong>
+                        </div>
+
+                        <div class="information-row">
+                            <span>Program and Major</span>
+                            <strong>
+                                Bachelor of Secondary Education,
+                                Major in Science
+                            </strong>
+                        </div>
+
+                        <div class="information-row">
+                            <span>Academic Year</span>
+                            <strong>2026–2027</strong>
+                        </div>
+
+                        <div class="information-row">
+                            <span>Course</span>
+                            <strong>Field Study 1 and Field Study 2</strong>
+                        </div>
+
+                        <div class="information-row">
+                            <span>Field Study Adviser</span>
+                            <strong>Add adviser name</strong>
+                        </div>
+
+                        <div class="information-row">
+                            <span>Cooperating School</span>
+                            <strong>Add school name</strong>
+                        </div>
+
+                        <div class="information-row">
+                            <span>Cooperating Teacher</span>
+                            <strong>Add teacher name</strong>
+                        </div>
+
+                    </div>
+
+                    <label class="button button-primary upload-document">
+                        Upload Curriculum Vitae (PDF)
+                        <input
+                            type="file"
+                            id="cvInput"
+                            accept=".pdf,application/pdf"
+                            hidden>
+                    </label>
+
+                    <p class="small-note" id="cvStatus">
+                        No CV selected.
+                    </p>
+
+                </article>
+
+            </div>
+
+
+            <!-- BIOGRAPHY, PHILOSOPHY, CAREER -->
+            <div class="card-grid three-columns">
+
+                <article class="card accent-blue">
+                    <h3>Brief Biography</h3>
+
+                    <p>
+                        Write 3–5 sentences introducing yourself, your
+                        educational background, why you chose to become a
+                        science teacher, and your interests.
+                    </p>
+                </article>
+
+                <article class="card accent-purple">
+                    <h3>Personal Educational Philosophy</h3>
+
+                    <p>
+                        I believe students learn science best when lessons
+                        connect to real-life experiences, encourage curiosity,
+                        and allow learners to participate actively.
+                    </p>
+                </article>
+
+                <article class="card accent-pink">
+                    <h3>Career Objectives</h3>
+
+                    <p>
+                        My goal is to complete my teaching preparation,
+                        earn my professional teaching license, and become
+                        an effective science teacher who supports students
+                        in their learning and development.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- LEARNING GOALS -->
+        <section class="portfolio-section content-section" id="goals">
+
+            <div class="section-heading">
+
+                <span class="section-number">02</span>
+
+                <div>
+                    <p class="section-kicker">MY LEARNING TARGETS</p>
+                    <h2>Learning Goals</h2>
+                    <p class="section-description">
+                        My goals and expectations for Field Study 1 and 2.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="card-grid three-columns">
+
+                <article class="card accent-blue">
+                    <span class="card-label">FIELD STUDY 1</span>
+                    <h3>Observation Goals</h3>
+
+                    <ul>
+                        <li>
+                            Observe classroom management and teaching strategies.
+                        </li>
+
+                        <li>
+                            Understand student behavior and learning needs.
+                        </li>
+
+                        <li>
+                            Identify effective ways to explain science concepts.
+                        </li>
+                    </ul>
+                </article>
+
+                <article class="card accent-green">
+                    <span class="card-label">FIELD STUDY 2</span>
+                    <h3>Participation Goals</h3>
+
+                    <ul>
+                        <li>
+                            Assist in classroom activities and lesson preparation.
+                        </li>
+
+                        <li>
+                            Develop communication and teaching skills.
+                        </li>
+
+                        <li>
+                            Gain experience working with students and teachers.
+                        </li>
+                    </ul>
+                </article>
+
+                <article class="card accent-pink">
+                    <span class="card-label">EXPECTATIONS</span>
+                    <h3>What I Hope to Learn</h3>
+
+                    <p>
+                        I expect to understand how real classrooms operate,
+                        improve my confidence, learn from experienced teachers,
+                        and identify the skills I need to develop before
+                        becoming a professional teacher.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- COOPERATING SCHOOL -->
+        <section class="portfolio-section content-section" id="school">
+
+            <div class="section-heading">
+
+                <span class="section-number">03</span>
+
+                <div>
+                    <p class="section-kicker">MY FIELDWORK ENVIRONMENT</p>
+                    <h2>Cooperating School Profile</h2>
+                    <p class="section-description">
+                        Information about the school where I conduct my fieldwork.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="card-grid three-columns">
+
+                <article class="card accent-blue">
+                    <h3>School Profile</h3>
+
+                    <p>
+                        <strong>School Name:</strong> Add school name
+                    </p>
+
+                    <p>
+                        <strong>Address:</strong> Add school address
+                    </p>
+
+                    <p>
+                        <strong>Type:</strong> Public or Private
+                    </p>
+
+                    <p>
+                        <strong>Year Founded:</strong> Add year
+                    </p>
+
+                    <p>
+                        <strong>Student Population:</strong> Add information
+                    </p>
+                </article>
+
+                <article class="card accent-green">
+                    <h3>Vision</h3>
+
+                    <p>
+                        Insert the official vision statement of your cooperating
+                        school.
+                    </p>
+                </article>
+
+                <article class="card accent-pink">
+                    <h3>Mission</h3>
+
+                    <p>
+                        Insert the official mission statement of your cooperating
+                        school.
+                    </p>
+                </article>
+
+                <article class="card accent-orange">
+                    <h3>Core Values</h3>
+
+                    <p>
+                        Add the school's official core values and briefly explain
+                        how they are practiced in the school community.
+                    </p>
+                </article>
+
+                <article class="card accent-blue">
+                    <h3>Organizational Structure</h3>
+
+                    <p>
+                        Describe the school administration, principal,
+                        department heads, cooperating teachers, and other
+                        relevant personnel.
+                    </p>
+                </article>
+
+                <article class="card accent-green">
+                    <h3>School Facilities</h3>
+
+                    <p>
+                        Describe available facilities, such as classrooms,
+                        science laboratories, libraries, computer rooms,
+                        and other learning spaces.
+                    </p>
+                </article>
+
+            </div>
+
+            <article class="card school-photo-card">
+
+                <h3>School Photo Documentation</h3>
+
+                <p>
+                    Add photographs of the school, facilities, or other
+                    relevant areas where photography is permitted.
+                </p>
+
+                <label class="button button-primary">
+                    Add School Photos
+                    <input
+                        type="file"
+                        id="schoolPhotosInput"
+                        accept="image/*"
+                        multiple
+                        hidden>
+                </label>
+
+                <div class="photo-gallery" id="schoolPhotoGallery"></div>
+
+            </article>
+
+        </section>
+
+
+        <!-- WEEKLY DOCUMENTATION -->
+        <section class="portfolio-section content-section" id="weekly">
+
+            <div class="section-heading">
+
+                <span class="section-number">04</span>
+
+                <div>
+                    <p class="section-kicker">OBSERVE • PARTICIPATE • REFLECT</p>
+                    <h2>Weekly Documentation and Reflection</h2>
+                    <p class="section-description">
+                        Document your observations, assigned tasks, evidence,
+                        and learning experiences each week.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="notice-box">
+                <strong>Documentation guide</strong>
+
+                <p>
+                    Open each week to add your learning objectives, classroom
+                    observations, participation, evidence, and reflection.
+                    Replace the sample prompts with your actual experiences.
+                </p>
+            </div>
+
+            <div class="accordion-list" id="weeklyAccordion">
+
+
+                <!-- WEEK 1 -->
+                <details class="accordion-item" open>
+
+                    <summary>
+                        <span class="week-badge">01</span>
+
+                        <span class="accordion-title">
+                            Week 1
+                            <small>Introduction and initial observations</small>
+                        </span>
+
+                        <span class="accordion-symbol"></span>
+                    </summary>
+
+                    <div class="accordion-content">
+
+                        <div class="card-grid three-columns">
+
+                            <article class="card accent-blue">
+                                <h3>Week Number and Date</h3>
+                                <p>Add Week 1 and the actual date range.</p>
+                            </article>
+
+                            <article class="card accent-green">
+                                <h3>Learning Objectives</h3>
+                                <p>
+                                    Describe what you aimed to learn during
+                                    the first week.
+                                </p>
+                            </article>
+
+                            <article class="card accent-pink">
+                                <h3>Classroom Observations (FS1)</h3>
+                                <p>
+                                    Describe the class, lesson topic, teaching
+                                    strategies, and student behavior.
+                                </p>
+                            </article>
+
+                            <article class="card accent-orange">
+                                <h3>Participation and Assigned Tasks (FS2)</h3>
+                                <p>
+                                    Describe the activities you assisted with
+                                    or the teaching tasks assigned to you.
+                                </p>
+                            </article>
+
+                            <article class="card accent-blue">
+                                <h3>Learning Evidence</h3>
+                                <p>
+                                    Add lesson plans, worksheets, observation
+                                    forms, or other supporting documents.
+                                </p>
+                            </article>
+
+                            <article class="card accent-green">
+                                <h3>Weekly Reflection</h3>
+                                <p>
+                                    Explain what happened, what you learned,
+                                    what challenged you, and what you will do next.
+                                </p>
+                            </article>
+
+                        </div>
+
+                        <div class="card documentation-card">
+
+                            <h3>Photo Documentation</h3>
+
+                            <label class="button button-primary">
+                                Add Photos
+                                <input
+                                    type="file"
+                                    class="week-photo-input"
+                                    accept="image/*"
+                                    multiple
+                                    hidden>
+                            </label>
+
+                            <div class="photo-gallery"></div>
+
+                        </div>
+
+                    </div>
+
+                </details>
+
+
+                <!-- WEEKS 2 TO 10 -->
+                <details class="accordion-item">
+                    <summary>
+                        <span class="week-badge">02</span>
+                        <span class="accordion-title">
+                            Week 2
+                            <small>Classroom observation and participation</small>
+                        </span>
+                        <span class="accordion-symbol"></span>
+                    </summary>
+                    <div class="accordion-content">
+                        <div class="weekly-template">
+                            <label>Week Number and Date
+                                <textarea placeholder="Enter the date range..."></textarea>
+                            </label>
+                            <label>Learning Objectives
+                                <textarea placeholder="What did you aim to learn?"></textarea>
+                            </label>
+                            <label>Classroom Observations (FS1)
+                                <textarea placeholder="Describe the lesson, teacher, and students..."></textarea>
+                            </label>
+                            <label>Participation and Assigned Tasks (FS2)
+                                <textarea placeholder="Describe your assigned tasks..."></textarea>
+                            </label>
+                            <label>Learning Evidence
+                                <textarea placeholder="List the documents or evidence collected..."></textarea>
+                            </label>
+                            <label>Weekly Reflection
+                                <textarea placeholder="What did you learn, and what will you improve?"></textarea>
+                            </label>
+                            <label>Photo Documentation
+                                <input type="file" class="week-photo-input" accept="image/*" multiple>
+                            </label>
+                            <div class="photo-gallery"></div>
+                        </div>
+                    </div>
+                </details>
+
+                <details class="accordion-item">
+                    <summary>
+                        <span class="week-badge">03</span>
+                        <span class="accordion-title">
+                            Week 3
+                            <small>Teaching strategies and learner needs</small>
+                        </span>
+                        <span class="accordion-symbol"></span>
+                    </summary>
+                    <div class="accordion-content">
+                        <div class="weekly-template">
+                            <label>Week Number and Date<textarea placeholder="Enter the date range..."></textarea></label>
+                            <label>Learning Objectives<textarea placeholder="What did you aim to learn?"></textarea></label>
+                            <label>Classroom Observations (FS1)<textarea placeholder="Describe the lesson, teacher, and students..."></textarea></label>
+                            <label>Participation and Assigned Tasks (FS2)<textarea placeholder="Describe your assigned tasks..."></textarea></label>
+                            <label>Learning Evidence<textarea placeholder="List the documents or evidence collected..."></textarea></label>
+                            <label>Weekly Reflection<textarea placeholder="What did you learn, and what will you improve?"></textarea></label>
+                            <label>Photo Documentation<input type="file" class="week-photo-input" accept="image/*" multiple></label>
+                            <div class="photo-gallery"></div>
+                        </div>
+                    </div>
+                </details>
+
+                <details class="accordion-item">
+                    <summary>
+                        <span class="week-badge">04</span>
+                        <span class="accordion-title">
+                            Week 4
+                            <small>Classroom management and engagement</small>
+                        </span>
+                        <span class="accordion-symbol"></span>
+                    </summary>
+                    <div class="accordion-content">
+                        <div class="weekly-template">
+                            <label>Week Number and Date<textarea placeholder="Enter the date range..."></textarea></label>
+                            <label>Learning Objectives<textarea placeholder="What did you aim to learn?"></textarea></label>
+                            <label>Classroom Observations (FS1)<textarea placeholder="Describe the lesson, teacher, and students..."></textarea></label>
+                            <label>Participation and Assigned Tasks (FS2)<textarea placeholder="Describe your assigned tasks..."></textarea></label>
+                            <label>Learning Evidence<textarea placeholder="List the documents or evidence collected..."></textarea></label>
+                            <label>Weekly Reflection<textarea placeholder="What did you learn, and what will you improve?"></textarea></label>
+                            <label>Photo Documentation<input type="file" class="week-photo-input" accept="image/*" multiple></label>
+                            <div class="photo-gallery"></div>
+                        </div>
+                    </div>
+                </details>
+
+                <details class="accordion-item">
+                    <summary>
+                        <span class="week-badge">05</span>
+                        <span class="accordion-title">
+                            Week 5
+                            <small>Student learning and instructional support</small>
+                        </span>
+                        <span class="accordion-symbol"></span>
+                    </summary>
+                    <div class="accordion-content">
+                        <div class="weekly-template">
+                            <label>Week Number and Date<textarea placeholder="Enter the date range..."></textarea></label>
+                            <label>Learning Objectives<textarea placeholder="What did you aim to learn?"></textarea></label>
+                            <label>Classroom Observations (FS1)<textarea placeholder="Describe the lesson, teacher, and students..."></textarea></label>
+                            <label>Participation and Assigned Tasks (FS2)<textarea placeholder="Describe your assigned tasks..."></textarea></label>
+                            <label>Learning Evidence<textarea placeholder="List the documents or evidence collected..."></textarea></label>
+                            <label>Weekly Reflection<textarea placeholder="What did you learn, and what will you improve?"></textarea></label>
+                            <label>Photo Documentation<input type="file" class="week-photo-input" accept="image/*" multiple></label>
+                            <div class="photo-gallery"></div>
+                        </div>
+                    </div>
+                </details>
+
+                <details class="accordion-item">
+                    <summary>
+                        <span class="week-badge">06</span>
+                        <span class="accordion-title">
+                            Week 6
+                            <small>Lesson preparation and classroom assistance</small>
+                        </span>
+                        <span class="accordion-symbol"></span>
+                    </summary>
+                    <div class="accordion-content">
+                        <div class="weekly-template">
+                            <label>Week Number and Date<textarea placeholder="Enter the date range..."></textarea></label>
+                            <label>Learning Objectives<textarea placeholder="What did you aim to learn?"></textarea></label>
+                            <label>Classroom Observations (FS1)<textarea placeholder="Describe the lesson, teacher, and students..."></textarea></label>
+                            <label>Participation and Assigned Tasks (FS2)<textarea placeholder="Describe your assigned tasks..."></textarea></label>
+                            <label>Learning Evidence<textarea placeholder="List the documents or evidence collected..."></textarea></label>
+                            <label>Weekly Reflection<textarea placeholder="What did you learn, and what will you improve?"></textarea></label>
+                            <label>Photo Documentation<input type="file" class="week-photo-input" accept="image/*" multiple></label>
+                            <div class="photo-gallery"></div>
+                        </div>
+                    </div>
+                </details>
+
+                <details class="accordion-item">
+                    <summary>
+                        <span class="week-badge">07</span>
+                        <span class="accordion-title">
+                            Week 7
+                            <small>Professional practice and reflection</small>
+                        </span>
+                        <span class="accordion-symbol"></span>
+                    </summary>
+                    <div class="accordion-content">
+                        <div class="weekly-template">
+                            <label>Week Number and Date<textarea placeholder="Enter the date range..."></textarea></label>
+                            <label>Learning Objectives<textarea placeholder="What did you aim to learn?"></textarea></label>
+                            <label>Classroom Observations (FS1)<textarea placeholder="Describe the lesson, teacher, and students..."></textarea></label>
+                            <label>Participation and Assigned Tasks (FS2)<textarea placeholder="Describe your assigned tasks..."></textarea></label>
+                            <label>Learning Evidence<textarea placeholder="List the documents or evidence collected..."></textarea></label>
+                            <label>Weekly Reflection<textarea placeholder="What did you learn, and what will you improve?"></textarea></label>
+                            <label>Photo Documentation<input type="file" class="week-photo-input" accept="image/*" multiple></label>
+                            <div class="photo-gallery"></div>
+                        </div>
+                    </div>
+                </details>
+
+                <details class="accordion-item">
+                    <summary>
+                        <span class="week-badge">08</span>
+                        <span class="accordion-title">
+                            Week 8
+                            <small>Progress and areas for improvement</small>
+                        </span>
+                        <span class="accordion-symbol"></span>
+                    </summary>
+                    <div class="accordion-content">
+                        <div class="weekly-template">
+                            <label>Week Number and Date<textarea placeholder="Enter the date range..."></textarea></label>
+                            <label>Learning Objectives<textarea placeholder="What did you aim to learn?"></textarea></label>
+                            <label>Classroom Observations (FS1)<textarea placeholder="Describe the lesson, teacher, and students..."></textarea></label>
+                            <label>Participation and Assigned Tasks (FS2)<textarea placeholder="Describe your assigned tasks..."></textarea></label>
+                            <label>Learning Evidence<textarea placeholder="List the documents or evidence collected..."></textarea></label>
+                            <label>Weekly Reflection<textarea placeholder="What did you learn, and what will you improve?"></textarea></label>
+                            <label>Photo Documentation<input type="file" class="week-photo-input" accept="image/*" multiple></label>
+                            <div class="photo-gallery"></div>
+                        </div>
+                    </div>
+                </details>
+
+                <details class="accordion-item">
+                    <summary>
+                        <span class="week-badge">09</span>
+                        <span class="accordion-title">
+                            Week 9
+                            <small>Continued learning and teaching practice</small>
+                        </span>
+                        <span class="accordion-symbol"></span>
+                    </summary>
+                    <div class="accordion-content">
+                        <div class="weekly-template">
+                            <label>Week Number and Date<textarea placeholder="Enter the date range..."></textarea></label>
+                            <label>Learning Objectives<textarea placeholder="What did you aim to learn?"></textarea></label>
+                            <label>Classroom Observations (FS1)<textarea placeholder="Describe the lesson, teacher, and students..."></textarea></label>
+                            <label>Participation and Assigned Tasks (FS2)<textarea placeholder="Describe your assigned tasks..."></textarea></label>
+                            <label>Learning Evidence<textarea placeholder="List the documents or evidence collected..."></textarea></label>
+                            <label>Weekly Reflection<textarea placeholder="What did you learn, and what will you improve?"></textarea></label>
+                            <label>Photo Documentation<input type="file" class="week-photo-input" accept="image/*" multiple></label>
+                            <div class="photo-gallery"></div>
+                        </div>
+                    </div>
+                </details>
+
+                <details class="accordion-item">
+                    <summary>
+                        <span class="week-badge">10</span>
+                        <span class="accordion-title">
+                            Week 10
+                            <small>Summary of learning and experiences</small>
+                        </span>
+                        <span class="accordion-symbol"></span>
+                    </summary>
+                    <div class="accordion-content">
+                        <div class="weekly-template">
+                            <label>Week Number and Date<textarea placeholder="Enter the date range..."></textarea></label>
+                            <label>Learning Objectives<textarea placeholder="What did you aim to learn?"></textarea></label>
+                            <label>Classroom Observations (FS1)<textarea placeholder="Describe the lesson, teacher, and students..."></textarea></label>
+                            <label>Participation and Assigned Tasks (FS2)<textarea placeholder="Describe your assigned tasks..."></textarea></label>
+                            <label>Learning Evidence<textarea placeholder="List the documents or evidence collected..."></textarea></label>
+                            <label>Weekly Reflection<textarea placeholder="What did you learn, and what will you improve?"></textarea></label>
+                            <label>Photo Documentation<input type="file" class="week-photo-input" accept="image/*" multiple></label>
+                            <div class="photo-gallery"></div>
+                        </div>
+                    </div>
+                </details>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROFESSIONAL DEVELOPMENT -->
+        <section class="portfolio-section content-section" id="activities">
+
+            <div class="section-heading">
+
+                <span class="section-number">05</span>
+
+                <div>
+                    <p class="section-kicker">CONTINUOUS LEARNING</p>
+                    <h2>Professional Development and Activities</h2>
+                    <p class="section-description">
+                        Seminars, webinars, workshops, conferences, and other
+                        educational activities.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="notice-box">
+                Add activities you actually attended or participated in.
+                Include the corresponding documentation and certificates when
+                available.
+            </div>
+
+            <div class="accordion-list">
+
+                <details class="accordion-item" open>
+
+                    <summary>
+                        <span class="week-badge">01</span>
+
+                        <span class="accordion-title">
+                            Activity 1
+                            <small>Add your first professional activity</small>
+                        </span>
+
+                        <span class="accordion-symbol"></span>
+                    </summary>
+
+                    <div class="accordion-content">
+
+                        <div class="weekly-template">
+
+                            <label>Title of the Activity
+                                <textarea placeholder="Enter the activity title..."></textarea>
+                            </label>
+
+                            <label>Date
+                                <input type="date">
+                            </label>
+
+                            <label>Brief Description
+                                <textarea placeholder="Describe what the activity covered and who conducted it..."></textarea>
+                            </label>
+
+                            <label>Reflection
+                                <textarea placeholder="Explain what you learned and how you will apply it..."></textarea>
+                            </label>
+
+                            <label>Photo Documentation
+                                <input type="file" class="activity-photo-input" accept="image/*" multiple>
+                            </label>
+
+                            <div class="photo-gallery"></div>
+
+                            <label>Certificate or Recognition
+                                <input type="file" class="activity-document-input" accept=".pdf,image/*">
+                            </label>
+
+                            <div class="file-status"></div>
+
+                        </div>
+
+                    </div>
+
+                </details>
+
+
+                <details class="accordion-item">
+
+                    <summary>
+                        <span class="week-badge">02</span>
+
+                        <span class="accordion-title">
+                            Activity 2
+                            <small>Add your second professional activity</small>
+                        </span>
+
+                        <span class="accordion-symbol"></span>
+                    </summary>
+
+                    <div class="accordion-content">
+
+                        <div class="weekly-template">
+
+                            <label>Title of the Activity
+                                <textarea placeholder="Enter the activity title..."></textarea>
+                            </label>
+
+                            <label>Date
+                                <input type="date">
+                            </label>
+
+                            <label>Brief Description
+                                <textarea placeholder="Describe the activity..."></textarea>
+                            </label>
+
+                            <label>Reflection
+                                <textarea placeholder="What did you learn?"></textarea>
+                            </label>
+
+                            <label>Photo Documentation
+                                <input type="file" class="activity-photo-input" accept="image/*" multiple>
+                            </label>
+
+                            <div class="photo-gallery"></div>
+
+                            <label>Certificate or Recognition
+                                <input type="file" class="activity-document-input" accept=".pdf,image/*">
+                            </label>
+
+                            <div class="file-status"></div>
+
+                        </div>
+
+                    </div>
+
+                </details>
+
+
+                <details class="accordion-item">
+
+                    <summary>
+                        <span class="week-badge">03</span>
+
+                        <span class="accordion-title">
+                            Activity 3
+                            <small>Add your third professional activity</small>
+                        </span>
+
+                        <span class="accordion-symbol"></span>
+                    </summary>
+
+                    <div class="accordion-content">
+
+                        <div class="weekly-template">
+
+                            <label>Title of the Activity
+                                <textarea placeholder="Enter the activity title..."></textarea>
+                            </label>
+
+                            <label>Date
+                                <input type="date">
+                            </label>
+
+                            <label>Brief Description
+                                <textarea placeholder="Describe the activity..."></textarea>
+                            </label>
+
+                            <label>Reflection
+                                <textarea placeholder="What did you learn?"></textarea>
+                            </label>
+
+                            <label>Photo Documentation
+                                <input type="file" class="activity-photo-input" accept="image/*" multiple>
+                            </label>
+
+                            <div class="photo-gallery"></div>
+
+                            <label>Certificate or Recognition
+                                <input type="file" class="activity-document-input" accept=".pdf,image/*">
+                            </label>
+
+                            <div class="file-status"></div>
+
+                        </div>
+
+                    </div>
+
+                </details>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROFESSIONAL GROWTH ACTION PLAN -->
+        <section class="portfolio-section content-section" id="action-plan">
+
+            <div class="section-heading">
+
+                <span class="section-number">06</span>
+
+                <div>
+                    <p class="section-kicker">MY NEXT STEPS</p>
+                    <h2>Professional Growth Action Plan</h2>
+                    <p class="section-description">
+                        Areas I want to improve and the actions I will take.
+                    </p>
+                </div>
+
+            </div>
+
+            <article class="card table-card">
+
+                <div class="table-scroll">
+
+                    <table>
+
+                        <thead>
+                            <tr>
+                                <th>Area for Improvement</th>
+                                <th>Action Plan</th>
+                                <th>Timeline</th>
+                                <th>Expected Outcome</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>Classroom Management</td>
+                                <td>
+                                    Observe experienced teachers and practice
+                                    effective classroom management techniques.
+                                </td>
+                                <td>During Field Study</td>
+                                <td>
+                                    Better confidence in managing a classroom.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Communication Skills</td>
+                                <td>
+                                    Practice explaining lessons clearly and
+                                    communicating with learners.
+                                </td>
+                                <td>Throughout the semester</td>
+                                <td>
+                                    Clearer and more effective communication.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Lesson Planning</td>
+                                <td>
+                                    Study lesson plan formats and ask for
+                                    feedback from my cooperating teacher.
+                                </td>
+                                <td>Weekly</td>
+                                <td>
+                                    Better-organized lessons and activities.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Teaching Confidence</td>
+                                <td>
+                                    Participate in teaching tasks and reflect
+                                    on my performance.
+                                </td>
+                                <td>Throughout Field Study</td>
+                                <td>
+                                    Increased confidence and teaching readiness.
+                                </td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </article>
+
+            <article class="card accent-purple">
+
+                <h3>My Commitment to Professional Growth</h3>
+
+                <p>
+                    I understand that becoming an effective teacher requires
+                    continuous learning, patience, preparation, and reflection.
+                    I will use my field study experiences to recognize my
+                    strengths, improve my weaknesses, and prepare myself
+                    for the responsibilities of teaching.
+                </p>
+
+            </article>
+
+        </section>
+
+
+        <!-- APPENDICES -->
+        <section class="portfolio-section content-section" id="appendices">
+
+            <div class="section-heading">
+
+                <span class="section-number">07</span>
+
+                <div>
+                    <p class="section-kicker">SUPPORTING DOCUMENTS</p>
+                    <h2>Appendices</h2>
+                    <p class="section-description">
+                        Additional records and evidence supporting my fieldwork.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="card-grid three-columns">
+
+                <article class="card accent-blue">
+
+                    <div class="appendix-icon">01</div>
+
+                    <h3>Observation Forms</h3>
+
+                    <p>
+                        Upload classroom observation forms and other
+                        relevant observation records.
+                    </p>
+
+                    <label class="button button-primary">
+                        Upload Documents
+                        <input type="file" class="appendix-input" accept=".pdf,.doc,.docx,image/*" multiple hidden>
+                    </label>
+
+                    <div class="file-list"></div>
+
+                </article>
+
+                <article class="card accent-green">
+
+                    <div class="appendix-icon">02</div>
+
+                    <h3>Attendance Records</h3>
+
+                    <p>
+                        Include attendance sheets or other permitted
+                        records of field study attendance.
+                    </p>
+
+                    <label class="button button-primary">
+                        Upload Documents
+                        <input type="file" class="appendix-input" accept=".pdf,.doc,.docx,.xls,.xlsx,image/*" multiple hidden>
+                    </label>
+
+                    <div class="file-list"></div>
+
+                </article>
+
+                <article class="card accent-pink">
+
+                    <div class="appendix-icon">03</div>
+
+                    <h3>School Forms</h3>
+
+                    <p>
+                        Add relevant school forms, provided that you have
+                        permission to include them.
+                    </p>
+
+                    <label class="button button-primary">
+                        Upload Documents
+                        <input type="file" class="appendix-input" accept=".pdf,.doc,.docx,image/*" multiple hidden>
+                    </label>
+
+                    <div class="file-list"></div>
+
+                </article>
+
+                <article class="card accent-orange">
+
+                    <div class="appendix-icon">04</div>
+
+                    <h3>Endorsement or Acceptance Letter</h3>
+
+                    <p>
+                        Add your endorsement or acceptance letter when applicable.
+                    </p>
+
+                    <label class="button button-primary">
+                        Upload Documents
+                        <input type="file" class="appendix-input" accept=".pdf,.doc,.docx,image/*" multiple hidden>
+                    </label>
+
+                    <div class="file-list"></div>
+
+                </article>
+
+                <article class="card accent-blue">
+
+                    <div class="appendix-icon">05</div>
+
+                    <h3>Approved Schedule</h3>
+
+                    <p>
+                        Include the approved class or observation schedule.
+                    </p>
+
+                    <label class="button button-primary">
+                        Upload Documents
+                        <input type="file" class="appendix-input" accept=".pdf,.doc,.docx,.xls,.xlsx,image/*" multiple hidden>
+                    </label>
+
+                    <div class="file-list"></div>
+
+                </article>
+
+                <article class="card accent-green">
+
+                    <div class="appendix-icon">06</div>
+
+                    <h3>Field Notes and Feedback</h3>
+
+                    <p>
+                        Add observation notes, evaluation forms, feedback,
+                        or other supporting records.
+                    </p>
+
+                    <label class="button button-primary">
+                        Upload Documents
+                        <input type="file" class="appendix-input" accept=".pdf,.doc,.docx,image/*" multiple hidden>
+                    </label>
+
+                    <div class="file-list"></div>
+
+                </article>
+
+            </div>
+
+            <div class="notice-box">
+                <strong>Privacy reminder</strong>
+
+                <p>
+                    Do not upload confidential student records, personal
+                    information, or photographs without appropriate permission.
+                </p>
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer class="site-footer">
+
+            <div class="footer-symbol">FS</div>
+
+            <h2>Every Experience Is a Lesson.</h2>
+
+            <p>
+                Field Study 1 &amp; 2 Electronic Portfolio
+            </p>
+
+            <p class="footer-small">
+                Taguig City University • College of Innovative Learning and Teaching
+            </p>
+
+            <a href="#introduction" class="back-to-top">
+                Back to Top ↑
+            </a>
+
+        </footer>
+
+    </main>
+
+</body>
+</html>
